@@ -1,0 +1,258 @@
+4382 12:04:21.052237 --- Starting bitbake server pid 4382 at 2026-11-16 12:04:21.052218 ---
+4382 12:04:21.053311 Started bitbake server pid 4382
+4382 12:04:21.053480 Entering server connection loop
+4382 12:04:21.054254 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4382 12:04:21.055173 Processing Client
+4382 12:04:21.055220 Connecting Client
+4382 12:04:21.055459 Running command ['setFeatures', [2, 1]]
+4382 12:04:21.055568 Command Completed
+4382 12:04:21.056301 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/six/work/yocto/qemuarch64', 'LOGNAME': 'six', 'HOME': '/home/six', 'BBPATH': '/home/six/work/yocto/qemuarch64', 'USER': 'six', 'PATH': '/home/six/work/yocto/poky/scripts:/home/six/work/yocto/poky/bitbake/bin:/home/six/.local/bin:/home/six/work/paths/*:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/six/.local/bin:/home/six/.local/bin', 'LC_ALL': 'en_US.UTF-8', 'LAST_EXIT_CODE': '0', 'PROMPT_MULTILINE_INDICATOR': '::: ', 'PROMPT_INDICATOR_VI_INSERT': ': ', 'XDG_SESSION_TYPE': 'tty', 'CMD_DURATION_MS': '79', 'TRANSIENT_PROMPT_MULTILINE_INDICATOR': '', 'MOTD_SHOWN': 'pam', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CONNECTION': '10.0.2.2 56157 10.0.2.15 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/six/work/yocto/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'PROMPT_INDICATOR_VI_NORMAL': '> ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PROMPT_INDICATOR': '> ', 'BR2_DL_DIR': '/home/six/.dl', 'SHLVL': '3', 'XDG_SESSION_ID': '2', 'TRANSIENT_PROMPT_COMMAND_RIGHT': '', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '10.0.2.2 56157 22', 'NU_VERSION': '0.117.0', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'FILE_PWD': '/home/six/.config/nushell/scripts/zoxide_h', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/six/work/yocto/qemuarch64', 'SSH_TTY': '/dev/pts/0', 'CURRENT_FILE': '/home/six/.config/nushell/scripts/zoxide_h/.zoxide_generated.nu', 'OLDPWD': '/home/six/work/yocto', '_': '/home/six/work/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/six/work/yocto/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+4382 12:04:21.360877 Command Completed
+4382 12:04:21.361469 Running command ['parseConfiguration']
+4382 12:04:21.362497 Command Completed
+4382 12:04:21.362759 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4382 12:04:21.363058 Command Completed
+4382 12:04:21.363447 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4382 12:04:21.363628 Command Completed
+4382 12:04:21.367640 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4382 12:04:21.367810 Command Completed
+4382 12:04:21.368125 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4382 12:04:21.368336 Command Completed
+4382 12:04:21.369914 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4382 12:04:21.370077 Command Completed
+4382 12:04:21.370471 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4382 12:04:21.370631 Command Completed
+4382 12:04:21.372026 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4382 12:04:21.372183 Command Completed
+4382 12:04:21.372466 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4382 12:04:21.372617 Command Completed
+4382 12:04:21.374375 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4382 12:04:21.374521 Command Completed
+4382 12:04:21.374951 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4382 12:04:21.375104 Command Completed
+4382 12:04:21.376046 Running command ['getLayerPriorities']
+4382 12:04:21.376269 Command Completed
+4382 12:04:21.377011 Running command ['clientComplete']
+4382 12:04:21.377107 Command Completed
+4382 12:04:21.377598 Processing Client
+4382 12:04:21.377638 Disconnecting Client
+4382 12:04:21.377947 No timeout, exiting.
+4382 12:04:21.479648 Exiting
+4382 12:04:21.482244 Original lockfile contents: ['4382\n']
+4382 12:04:21.482953 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/six/work/yocto/qemuarch64/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4394 12:04:21.802182 --- Starting bitbake server pid 4394 at 2026-11-16 12:04:21.802166 ---
+4394 12:04:21.803049 Started bitbake server pid 4394
+4394 12:04:21.803179 Entering server connection loop
+4394 12:04:21.803410 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4394 12:04:21.804385 Processing Client
+4394 12:04:21.804434 Connecting Client
+4394 12:04:21.804863 Running command ['setFeatures', [2, 1]]
+4394 12:04:21.805112 Command Completed
+4394 12:04:21.805610 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/six/work/yocto/qemuarch64', 'LOGNAME': 'six', 'HOME': '/home/six', 'BBPATH': '/home/six/work/yocto/qemuarch64', 'USER': 'six', 'PATH': '/home/six/work/yocto/poky/scripts:/home/six/work/yocto/poky/bitbake/bin:/home/six/.local/bin:/home/six/work/paths/*:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/six/.local/bin:/home/six/.local/bin', 'LC_ALL': 'en_US.UTF-8', 'LAST_EXIT_CODE': '0', 'PROMPT_MULTILINE_INDICATOR': '::: ', 'PROMPT_INDICATOR_VI_INSERT': ': ', 'XDG_SESSION_TYPE': 'tty', 'CMD_DURATION_MS': '79', 'TRANSIENT_PROMPT_MULTILINE_INDICATOR': '', 'MOTD_SHOWN': 'pam', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CONNECTION': '10.0.2.2 56157 10.0.2.15 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/six/work/yocto/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'PROMPT_INDICATOR_VI_NORMAL': '> ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PROMPT_INDICATOR': '> ', 'BR2_DL_DIR': '/home/six/.dl', 'SHLVL': '4', 'XDG_SESSION_ID': '2', 'TRANSIENT_PROMPT_COMMAND_RIGHT': '', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '10.0.2.2 56157 22', 'NU_VERSION': '0.117.0', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'FILE_PWD': '/home/six/.config/nushell/scripts/zoxide_h', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/six/work/yocto/qemuarch64', 'SSH_TTY': '/dev/pts/0', 'CURRENT_FILE': '/home/six/.config/nushell/scripts/zoxide_h/.zoxide_generated.nu', 'OLDPWD': '/home/six/work/yocto', '_': '/home/six/work/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/six/work/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-raspberrypi']]
+4394 12:04:22.075566 Command Completed
+4394 12:04:22.076115 Running command ['parseConfiguration']
+4394 12:04:22.077265 Command Completed
+4394 12:04:22.077589 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4394 12:04:22.077779 Command Completed
+4394 12:04:22.078198 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4394 12:04:22.078391 Command Completed
+4394 12:04:22.082125 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4394 12:04:22.082289 Command Completed
+4394 12:04:22.082599 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4394 12:04:22.082803 Command Completed
+4394 12:04:22.084574 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4394 12:04:22.084716 Command Completed
+4394 12:04:22.085104 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4394 12:04:22.085277 Command Completed
+4394 12:04:22.086376 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4394 12:04:22.086517 Command Completed
+4394 12:04:22.087002 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4394 12:04:22.087166 Command Completed
+4394 12:04:22.088027 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4394 12:04:22.088180 Command Completed
+4394 12:04:22.088533 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4394 12:04:22.088689 Command Completed
+4394 12:04:22.090618 Running command ['parseConfiguration']
+4394 12:04:22.103174 Command Completed
+4394 12:04:22.104056 Running command ['clientComplete']
+4394 12:04:22.104263 Command Completed
+4394 12:04:22.104568 Processing Client
+4394 12:04:22.104611 Disconnecting Client
+4394 12:04:22.104774 No timeout, exiting.
+4394 12:04:22.207020 Exiting
+4394 12:04:22.210485 Original lockfile contents: ['4394\n']
+4394 12:04:22.211183 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/six/work/yocto/qemuarch64/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4655 12:05:42.437308 --- Starting bitbake server pid 4655 at 2026-11-16 12:05:42.437292 ---
+4655 12:05:42.438314 Started bitbake server pid 4655
+4655 12:05:42.438475 Entering server connection loop
+4655 12:05:42.438815 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4655 12:05:42.439744 Processing Client
+4655 12:05:42.439777 Connecting Client
+4655 12:05:42.439973 Running command ['setFeatures', [2, 1]]
+4655 12:05:42.440076 Command Completed
+4655 12:05:42.441008 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/six/work/yocto/qemuarch64', 'LOGNAME': 'six', 'HOME': '/home/six', 'BBPATH': '/home/six/work/yocto/qemuarch64', 'USER': 'six', 'PATH': '/home/six/work/yocto/poky/scripts:/home/six/work/yocto/poky/bitbake/bin:/home/six/.local/bin:/home/six/work/paths/*:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/six/.local/bin:/home/six/.local/bin', 'LC_ALL': 'en_US.UTF-8', 'LAST_EXIT_CODE': '0', 'PROMPT_MULTILINE_INDICATOR': '::: ', 'PROMPT_INDICATOR_VI_INSERT': ': ', 'XDG_SESSION_TYPE': 'tty', 'CMD_DURATION_MS': '127', 'TRANSIENT_PROMPT_MULTILINE_INDICATOR': '', 'MOTD_SHOWN': 'pam', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CONNECTION': '10.0.2.2 56157 10.0.2.15 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/six/work/yocto/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'PROMPT_INDICATOR_VI_NORMAL': '> ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PROMPT_INDICATOR': '> ', 'BR2_DL_DIR': '/home/six/.dl', 'SHLVL': '3', 'XDG_SESSION_ID': '2', 'TRANSIENT_PROMPT_COMMAND_RIGHT': '', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '10.0.2.2 56157 22', 'NU_VERSION': '0.117.0', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'FILE_PWD': '/home/six/.config/nushell/scripts/zoxide_h', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/six/work/yocto/qemuarch64', 'SSH_TTY': '/dev/pts/0', 'CURRENT_FILE': '/home/six/.config/nushell/scripts/zoxide_h/.zoxide_generated.nu', 'OLDPWD': '/home/six/work/yocto', '_': '/home/six/work/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/six/work/yocto/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+4655 12:05:42.716606 Command Completed
+4655 12:05:42.717297 Running command ['parseConfiguration']
+4655 12:05:42.718198 Command Completed
+4655 12:05:42.718475 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4655 12:05:42.718672 Command Completed
+4655 12:05:42.719123 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4655 12:05:42.719343 Command Completed
+4655 12:05:42.723446 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4655 12:05:42.723618 Command Completed
+4655 12:05:42.724014 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4655 12:05:42.724241 Command Completed
+4655 12:05:42.725413 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4655 12:05:42.725581 Command Completed
+4655 12:05:42.725790 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4655 12:05:42.725950 Command Completed
+4655 12:05:42.727494 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4655 12:05:42.727664 Command Completed
+4655 12:05:42.728032 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4655 12:05:42.728207 Command Completed
+4655 12:05:42.729315 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4655 12:05:42.729478 Command Completed
+4655 12:05:42.729714 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4655 12:05:42.730108 Command Completed
+4655 12:05:42.731062 Running command ['getLayerPriorities']
+4655 12:05:42.731300 Command Completed
+4655 12:05:42.732009 Running command ['clientComplete']
+4655 12:05:42.732104 Command Completed
+4655 12:05:42.732628 Processing Client
+4655 12:05:42.732670 Disconnecting Client
+4655 12:05:42.732800 No timeout, exiting.
+4655 12:05:42.939963 Exiting
+4655 12:05:42.948078 Original lockfile contents: ['4655\n']
+4655 12:05:42.948241 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/six/work/yocto/qemuarch64/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4666 12:05:43.248215 --- Starting bitbake server pid 4666 at 2026-11-16 12:05:43.248200 ---
+4666 12:05:43.249051 Started bitbake server pid 4666
+4666 12:05:43.249185 Entering server connection loop
+4666 12:05:43.249469 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4666 12:05:43.250603 Processing Client
+4666 12:05:43.250641 Connecting Client
+4666 12:05:43.250871 Running command ['setFeatures', [2, 1]]
+4666 12:05:43.251109 Command Completed
+4666 12:05:43.251605 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/six/work/yocto/qemuarch64', 'LOGNAME': 'six', 'HOME': '/home/six', 'BBPATH': '/home/six/work/yocto/qemuarch64', 'USER': 'six', 'PATH': '/home/six/work/yocto/poky/scripts:/home/six/work/yocto/poky/bitbake/bin:/home/six/.local/bin:/home/six/work/paths/*:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/six/.local/bin:/home/six/.local/bin', 'LC_ALL': 'en_US.UTF-8', 'LAST_EXIT_CODE': '0', 'PROMPT_MULTILINE_INDICATOR': '::: ', 'PROMPT_INDICATOR_VI_INSERT': ': ', 'XDG_SESSION_TYPE': 'tty', 'CMD_DURATION_MS': '127', 'TRANSIENT_PROMPT_MULTILINE_INDICATOR': '', 'MOTD_SHOWN': 'pam', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CONNECTION': '10.0.2.2 56157 10.0.2.15 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/six/work/yocto/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'PROMPT_INDICATOR_VI_NORMAL': '> ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PROMPT_INDICATOR': '> ', 'BR2_DL_DIR': '/home/six/.dl', 'SHLVL': '4', 'XDG_SESSION_ID': '2', 'TRANSIENT_PROMPT_COMMAND_RIGHT': '', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '10.0.2.2 56157 22', 'NU_VERSION': '0.117.0', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'FILE_PWD': '/home/six/.config/nushell/scripts/zoxide_h', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/six/work/yocto/qemuarch64', 'SSH_TTY': '/dev/pts/0', 'CURRENT_FILE': '/home/six/.config/nushell/scripts/zoxide_h/.zoxide_generated.nu', 'OLDPWD': '/home/six/work/yocto', '_': '/home/six/work/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/six/work/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-raspberrypi']]
+4666 12:05:43.531343 Command Completed
+4666 12:05:43.531790 Running command ['parseConfiguration']
+4666 12:05:43.532818 Command Completed
+4666 12:05:43.533037 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4666 12:05:43.533225 Command Completed
+4666 12:05:43.533468 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4666 12:05:43.533651 Command Completed
+4666 12:05:43.537048 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4666 12:05:43.537217 Command Completed
+4666 12:05:43.537622 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4666 12:05:43.538152 Command Completed
+4666 12:05:43.539796 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4666 12:05:43.540060 Command Completed
+4666 12:05:43.540257 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4666 12:05:43.540422 Command Completed
+4666 12:05:43.541502 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4666 12:05:43.541800 Command Completed
+4666 12:05:43.542085 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4666 12:05:43.542231 Command Completed
+4666 12:05:43.543194 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4666 12:05:43.543337 Command Completed
+4666 12:05:43.543517 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4666 12:05:43.543679 Command Completed
+4666 12:05:43.545557 Running command ['parseConfiguration']
+4666 12:05:43.558715 Command Completed
+4666 12:05:43.559674 Running command ['clientComplete']
+4666 12:05:43.559772 Command Completed
+4666 12:05:43.560056 Processing Client
+4666 12:05:43.560098 Disconnecting Client
+4666 12:05:43.560155 No timeout, exiting.
+4666 12:05:43.661812 Exiting
+4666 12:05:43.665255 Original lockfile contents: ['4666\n']
+4666 12:05:43.665497 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/six/work/yocto/qemuarch64/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4900 12:05:58.375184 --- Starting bitbake server pid 4900 at 2026-11-16 12:05:58.375169 ---
+4900 12:05:58.376218 Started bitbake server pid 4900
+4900 12:05:58.376351 Entering server connection loop
+4900 12:05:58.376693 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4900 12:05:58.377514 Processing Client
+4900 12:05:58.377547 Connecting Client
+4900 12:05:58.377737 Running command ['setFeatures', [2, 1]]
+4900 12:05:58.377836 Command Completed
+4900 12:05:58.378500 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/six/work/yocto/qemuarch64', 'LOGNAME': 'six', 'HOME': '/home/six', 'BBPATH': '/home/six/work/yocto/qemuarch64', 'USER': 'six', 'PATH': '/home/six/work/yocto/poky/scripts:/home/six/work/yocto/poky/bitbake/bin:/home/six/.local/bin:/home/six/work/paths/*:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/six/.local/bin:/home/six/.local/bin', 'LC_ALL': 'en_US.UTF-8', 'LAST_EXIT_CODE': '0', 'PROMPT_MULTILINE_INDICATOR': '::: ', 'PROMPT_INDICATOR_VI_INSERT': ': ', 'XDG_SESSION_TYPE': 'tty', 'CMD_DURATION_MS': '129', 'TRANSIENT_PROMPT_MULTILINE_INDICATOR': '', 'MOTD_SHOWN': 'pam', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CONNECTION': '10.0.2.2 56157 10.0.2.15 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/six/work/yocto/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'PROMPT_INDICATOR_VI_NORMAL': '> ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PROMPT_INDICATOR': '> ', 'BR2_DL_DIR': '/home/six/.dl', 'SHLVL': '3', 'XDG_SESSION_ID': '2', 'TRANSIENT_PROMPT_COMMAND_RIGHT': '', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '10.0.2.2 56157 22', 'NU_VERSION': '0.117.0', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'FILE_PWD': '/home/six/.config/nushell/scripts/zoxide_h', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/six/work/yocto/qemuarch64', 'SSH_TTY': '/dev/pts/0', 'CURRENT_FILE': '/home/six/.config/nushell/scripts/zoxide_h/.zoxide_generated.nu', 'OLDPWD': '/home/six/work/yocto', '_': '/home/six/work/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/six/work/yocto/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+4900 12:05:58.655457 Command Completed
+4900 12:05:58.656128 Running command ['parseConfiguration']
+4900 12:05:58.656929 Command Completed
+4900 12:05:58.657334 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4900 12:05:58.657550 Command Completed
+4900 12:05:58.658119 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4900 12:05:58.658310 Command Completed
+4900 12:05:58.662501 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4900 12:05:58.662701 Command Completed
+4900 12:05:58.663181 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4900 12:05:58.663398 Command Completed
+4900 12:05:58.665519 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4900 12:05:58.665668 Command Completed
+4900 12:05:58.666033 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4900 12:05:58.666229 Command Completed
+4900 12:05:58.667319 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4900 12:05:58.667419 Command Completed
+4900 12:05:58.668491 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4900 12:05:58.668665 Command Completed
+4900 12:05:58.669780 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4900 12:05:58.670067 Command Completed
+4900 12:05:58.670335 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4900 12:05:58.670507 Command Completed
+4900 12:05:58.671497 Running command ['getLayerPriorities']
+4900 12:05:58.671731 Command Completed
+4900 12:05:58.672406 Running command ['clientComplete']
+4900 12:05:58.672494 Command Completed
+4900 12:05:58.673203 Processing Client
+4900 12:05:58.673245 Disconnecting Client
+4900 12:05:58.673409 No timeout, exiting.
+4900 12:05:58.826735 Exiting
+4900 12:05:58.833076 Original lockfile contents: ['4900\n']
+4900 12:05:58.835165 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/six/work/yocto/qemuarch64/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4911 12:05:59.087104 --- Starting bitbake server pid 4911 at 2026-11-16 12:05:59.087078 ---
+4911 12:05:59.087994 Started bitbake server pid 4911
+4911 12:05:59.088131 Entering server connection loop
+4911 12:05:59.088401 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4911 12:05:59.089500 Processing Client
+4911 12:05:59.089540 Connecting Client
+4911 12:05:59.089762 Running command ['setFeatures', [2, 1]]
+4911 12:05:59.089877 Command Completed
+4911 12:05:59.090602 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/six/work/yocto/qemuarch64', 'LOGNAME': 'six', 'HOME': '/home/six', 'BBPATH': '/home/six/work/yocto/qemuarch64', 'USER': 'six', 'PATH': '/home/six/work/yocto/poky/scripts:/home/six/work/yocto/poky/bitbake/bin:/home/six/.local/bin:/home/six/work/paths/*:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/six/.local/bin:/home/six/.local/bin', 'LC_ALL': 'en_US.UTF-8', 'LAST_EXIT_CODE': '0', 'PROMPT_MULTILINE_INDICATOR': '::: ', 'PROMPT_INDICATOR_VI_INSERT': ': ', 'XDG_SESSION_TYPE': 'tty', 'CMD_DURATION_MS': '129', 'TRANSIENT_PROMPT_MULTILINE_INDICATOR': '', 'MOTD_SHOWN': 'pam', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CONNECTION': '10.0.2.2 56157 10.0.2.15 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/six/work/yocto/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'PROMPT_INDICATOR_VI_NORMAL': '> ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PROMPT_INDICATOR': '> ', 'BR2_DL_DIR': '/home/six/.dl', 'SHLVL': '4', 'XDG_SESSION_ID': '2', 'TRANSIENT_PROMPT_COMMAND_RIGHT': '', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '10.0.2.2 56157 22', 'NU_VERSION': '0.117.0', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'FILE_PWD': '/home/six/.config/nushell/scripts/zoxide_h', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/six/work/yocto/qemuarch64', 'SSH_TTY': '/dev/pts/0', 'CURRENT_FILE': '/home/six/.config/nushell/scripts/zoxide_h/.zoxide_generated.nu', 'OLDPWD': '/home/six/work/yocto', '_': '/home/six/work/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/six/work/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-raspberrypi']]
+4911 12:05:59.371471 Command Completed
+4911 12:05:59.372580 Running command ['parseConfiguration']
+4911 12:05:59.373333 Command Completed
+4911 12:05:59.373974 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4911 12:05:59.374162 Command Completed
+4911 12:05:59.374506 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4911 12:05:59.374994 Command Completed
+4911 12:05:59.378672 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4911 12:05:59.378848 Command Completed
+4911 12:05:59.379150 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4911 12:05:59.379347 Command Completed
+4911 12:05:59.380540 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4911 12:05:59.380836 Command Completed
+4911 12:05:59.381117 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4911 12:05:59.381279 Command Completed
+4911 12:05:59.383310 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4911 12:05:59.383466 Command Completed
+4911 12:05:59.383689 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4911 12:05:59.384096 Command Completed
+4911 12:05:59.385024 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4911 12:05:59.385179 Command Completed
+4911 12:05:59.385508 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4911 12:05:59.385660 Command Completed
+4911 12:05:59.387437 Running command ['parseConfiguration']
+4911 12:05:59.399881 Command Completed
+4911 12:05:59.401261 Running command ['clientComplete']
+4911 12:05:59.401373 Command Completed
+4911 12:05:59.401558 Processing Client
+4911 12:05:59.401599 Disconnecting Client
+4911 12:05:59.401658 No timeout, exiting.
+4911 12:05:59.503030 Exiting
+4911 12:05:59.505619 Original lockfile contents: ['4911\n']
+4911 12:05:59.506286 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/six/work/yocto/qemuarch64/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
